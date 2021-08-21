@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Computer World</title>
+</head>
+
+<body>
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/mac.png" alt="" srcset="">
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                        <p>Apple M1 chip with 8-core CPU with 4 performance ocres and 4 efficiency cores, 7-core GPU,
+                            and
+                            16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt . USB 4 ports
+                            Magic
+                            Mouse Magic Keyboard - US English</p>
+                    </div>
+
+                    <div class="specification">
+                        <div class="memory my-5">
+                            <h5>Memory</h5>
+                            <button id="8GB-memory" class=" btn btn-outline-secondary">8GB unified memory</button>
+                            <button id="16GB-memory" class="btn btn-outline-secondary">16GB unified memory</button>
+                        </div>
+
+
+                        <div class="storage my-5">
+                            <h5>Storage</h5>
+                            <button id="256gb-ssd" class="btn btn-outline-secondary">256GB SSD storage</button>
+                            <button id="512gb-ssd" class="btn btn-outline-secondary">512GB SSD storage</button>
+                            <button id="1tb-ssd" class="btn btn-outline-secondary">1TB SSD storage</button>
+                        </div>
+
+
+                        <div class="delivery my-5">
+                            <h5>Choose your delivery option</h5>
+                            <button id="free-shipping" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime
+                                Delivery</button>
+                            <button id="fast-shipping" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge
+                                $20</button>
+                        </div>
+                    </div>
+
+                    <div class="cost">
+                        <div class="row">
+                            <p class="fw-bold col-md-5">Best Price</p>
+                            <p class="fw-bold col-md-7">$<span id="best-cost">1299</span></p>
+                            <hr style="width: 50%; margin-left: 10px;">
+                        </div>
+
+                        <div class=" cost row">
+                            <p class="fw-bold col-md-5">Extra Memory Cost</p>
+                            <p class="fw-bold col-md-7">$<span id='extra-memory-cost'>0</span></p>
+                            <hr style="width: 50%; margin-left: 10px;">
+                        </div>
+
+                        <div class="cost row">
+                            <p class="fw-bold col-md-5">Extra Storage Cost</p>
+                            <p class="fw-bold col-md-7">$<span id='extra-storage-cost'>0</span></p>
+                            <hr style="width: 50%; margin-left: 10px;">
+                        </div>
+
+                        <div class="cost row">
+                            <p class="fw-bold col-md-5">Delivery Charge</p>
+                            <p class="fw-bold col-md-7">$<span id="delivery-cost">0</span></p>
+                        </div>
+
+                        <hr class="fw-bold" style="width: 330px; padding: 1.20px;">
+
+                        <div class="total row">
+                            <p class="fw-bold col-md-5">Total Price</p>
+                            <p class="fw-bold col-md-7">$<span id="total-cost">1299</span></p>
+                        </div>
+                        <div class="total row">
+                            <p>Add Promo Code</p>
+                            <input id="promo-code" class="rounded col-md-4" type=" text" placeholder="Enter Promo Code">
+                            <button id="code-applied" class="btn btn-outline-danger col-md-2 ms-3"
+                                type="submit">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5" style="width: 90%; margin: auto; padding: 1px;">
+            <div id="grand-total">
+                <p id="promo-code-text" class="text-center fw-bold mt-2"></p>
+                <h2 class="text-center my-5">Total: $<span id="display-cost">1299</span></h2>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript which is wrote by me -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
