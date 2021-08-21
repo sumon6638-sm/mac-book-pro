@@ -72,7 +72,7 @@ document.getElementById('1tb-ssd').addEventListener('click', function () {
 
 /*
 ------------------------
-    Starting First Shipping 
+    Starting Fast Shipping 
 ------------------------
 */
 
@@ -102,12 +102,11 @@ document.getElementById('fast-shipping').addEventListener('click', function () {
 });
 
 
-
-
-
-
-
-
+/*
+------------------------
+    Starting Calculating Total Cost
+------------------------
+*/
 //Calculating Total Cost
 function calculateTotal(memory, storage, deliveryCharge, code) {
     let totalMemoryCost = increasingMemory(memory).innerText;
@@ -124,11 +123,11 @@ function calculateTotal(memory, storage, deliveryCharge, code) {
 
     totalBalance.innerText = finalMemoryCost + finalStorageCost + finalDeliveryCost + parseInt(currentBalance);
 
-    //bonus Part-1(Display Total Cost)
+    //bonusPart-1(Display Total Cost)
     let displayCost = document.getElementById('display-cost');
     displayCost.innerText = totalBalance.innerText;
 
-    //bonus Part-2(Applying Promo Code)
+    //bonusPart-2(Applying Promo Code)
     code = document.getElementById('promo-code').value;
     if (code == 'stevekaku') {
         const p = document.getElementById("promo-code-text");
@@ -141,11 +140,10 @@ function calculateTotal(memory, storage, deliveryCharge, code) {
     }
 }
 
-//Bonus Part
+
+//Bonus Part or Promo-code-applied
 document.getElementById('code-applied').addEventListener('click', function () {
     calculateTotal('stevekaku');
 
     document.getElementById('promo-code').value = '';
-
-
 });
